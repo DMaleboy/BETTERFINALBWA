@@ -10,7 +10,7 @@ class SpecialistService
 {
     private $specialistRepository;
 
-    public function _construct(SpecialistRepository $specialistRepository)
+    public function __construct(SpecialistRepository $specialistRepository)
     {
         $this->specialistRepository = $specialistRepository;
     }
