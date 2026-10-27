@@ -18,8 +18,8 @@ class BookingTransactionController extends Controller
 
     public function index()
     {
-        $transaction = $this->bookingTransactionService->getAll();
-        return response()->json(TransactionResource::collection($transaction));
+        $transactions = $this->bookingTransactionService->getAll();
+        return response()->json(TransactionResource::collection($transactions));
     }
 
      public function show(int $id)
