@@ -18,8 +18,8 @@ Route::apiResource('specialist', SpecialistController::class);
 Route::apiResource('doctors', DoctorController::class);
 Route::apiResource('hospitals', HospitalController::class);
 
-Route::post('hospitals/{hospital}/specialist', [HospitalSpecialistController::class, 'attach']);
-Route::delete('hospitals/{hospital}/specialist/{specialist}', [HospitalSpecialistController::class, 'detach']);
+Route::post('hospitals/{hospital}/specialists', [HospitalSpecialistController::class, 'attach']);
+Route::delete('hospitals/{hospital}/specialists/{specialist}', [HospitalSpecialistController::class, 'detach']);
 
 
 Route::apiResource('transactions', BookingTransactionController::class);
